@@ -12,8 +12,7 @@ namespace TestMod
         public const string ModName = "YOUR MOD NAME";
         public const string ModVersion = "1.0";
         public const string Description = "Your description";
-        public const string Author = "You";
-        public const string Company = "Can be null or full on deleted";
+        public const string Author = "oreotrollturbo";
     }
 
     public class Template : MelonMod
