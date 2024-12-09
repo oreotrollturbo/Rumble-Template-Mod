@@ -3,7 +3,7 @@ using BuildInfo = TestMod.BuildInfo;
 using RumbleModdingAPI;
 
 [assembly: MelonInfo(typeof(TestMod.Class1), BuildInfo.ModName, BuildInfo.ModVersion, BuildInfo.Author)]
-[assembly: MelonGame(null, null)]
+[assembly: MelonGame("Buckethead Entertainment", "RUMBLE")]
 
 namespace TestMod
 {
@@ -20,7 +20,9 @@ namespace TestMod
     {
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
-
+            if (sceneName == "Gym") {
+                MelonLogger.Msg("test");
+            }
         }
     }
 }
