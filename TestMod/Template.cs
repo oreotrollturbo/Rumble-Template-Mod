@@ -20,8 +20,9 @@ namespace TestMod
     {
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
-            if (sceneName == "Gym") {
-                MelonLogger.Msg("test");
+            if (sceneName == "Gym")
+            {
+                MelonLogger.Msg(Calls.Managers.GetPlayerManager().localPlayer.Data.GeneralData.PublicUsername);
             }
         }
     }
