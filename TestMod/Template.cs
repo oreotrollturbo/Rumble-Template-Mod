@@ -2,21 +2,21 @@
 using BuildInfo = TestMod.BuildInfo;
 using RumbleModdingAPI;
 
-[assembly: MelonInfo(typeof(TestMod.Class1), BuildInfo.ModName, BuildInfo.ModVersion, BuildInfo.Author)]
+[assembly: MelonInfo(typeof(TestMod.Template), BuildInfo.ModName, BuildInfo.ModVersion, BuildInfo.Author)]
 [assembly: MelonGame("Buckethead Entertainment", "RUMBLE")]
 
-namespace TestMod
+namespace TestMod 
 {
     public static class BuildInfo
     {
-        public const string ModName = "Test mod";
+        public const string ModName = "YOUR MOD NAME";
         public const string ModVersion = "1.0";
-        public const string Description = "God knows";
-        public const string Author = "oreotrollutrbo";
-        public const string Company = "Crusalis LLC";
+        public const string Description = "Your description";
+        public const string Author = "You";
+        public const string Company = "Can be null or full on deleted";
     }
 
-    public class Class1 : MelonMod
+    public class Template : MelonMod
     {
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
